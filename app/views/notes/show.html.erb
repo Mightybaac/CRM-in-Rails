@@ -1,0 +1,10 @@
+<p>
+  <strong>Content:</strong>
+  <%= @note.content %>
+</p>
+<p>
+  <strong>Customer:</strong>
+  <%= link_to @note.customer.name, @note.customer %>
+</p>
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>
