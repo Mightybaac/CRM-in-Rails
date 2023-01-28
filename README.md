@@ -1,11 +1,17 @@
 To organize a database for the CRM-in-Rails, you can follow these steps:
 
 Run the command rake db:create to create the database for your application.
+
 Run the command rake db:migrate to create the necessary tables in the database.
+
 You can also use the command rake db:seed to seed your database with sample data if you want to test the functionality of your CRM.
+
 You can create additional tables and relationships as necessary. For example, you may want to create a table for "Contacts" that has a one-to-many relationship with the "Customers" table.
+
 You can also add any necessary indexes to your tables to improve the performance of your database.
+
 Finally, you should test your database to ensure that it is functioning correctly.
+
 It is important to keep in mind that the above steps and command are for a basic CRM Database and it is important to consider the data and functionality that you want to include in your CRM before organizing a database
 
 Please note that, this is a general guide and will require additional configuration and customization to fit your specific needs.
