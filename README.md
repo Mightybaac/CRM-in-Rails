@@ -1,4 +1,4 @@
-Run terminal command commands in the terminal to generate the Note model and also add the association of the note to the customer model by adding has_many :notes in the customer model.
+Run app/terminal-command commands in the terminal to generate the Note model and also add the association of the note to the customer model by adding has_many :notes in the customer model.
 
 To organize a database for the CRM-in-Rails, you can follow these steps:
 
