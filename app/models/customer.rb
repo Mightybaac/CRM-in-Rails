@@ -1,5 +1,6 @@
-# app/models/customer.rb
 class Customer < ApplicationRecord
   has_many :notes
-  validates :name, :email, :phone, presence: true
+  validates :name, presence: true
+  validates :email, presence: true
+  validates :phone, presence: true
 end
