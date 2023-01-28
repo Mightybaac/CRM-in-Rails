@@ -1,5 +1,12 @@
 Run app/terminal-command commands in the terminal to generate the Note model and also add the association of the note to the customer model by adding has_many :notes in the customer model.
 
+A new form partial was created and rendered in the new and edit views of the customers controller. This partial contains the form fields for the customer's name, email, and phone number.
+The labels and text fields for the name, email, and phone attributes have been moved to the new form partial.
+The submit button for the form now says "Create Customer" in the new view and "Update Customer" in the edit view.
+The load_and_authorize_resource method was added to the customers controller. This method uses the CanCanCan gem to handle authorization for the controller's actions.
+The Ability class was created, which defines the abilities of different user types. In this case, if the user is an admin, they have the ability to manage all resources. If the user is not an admin, their abilities have not been defined yet.
+
+
 To organize a database for the CRM-in-Rails, you can follow these steps:
 
 Run the command rake db:create to create the database for your application.
