@@ -12,9 +12,8 @@ The following steps outline the process of setting up a CRM database using Ruby 
 
 6. Test the database to ensure correct functionality.
 _________________________________________________________________________________________________________________________________________________________________
-This code is for a CRM program using Ruby on Rails and includes authentication using the Devise gem and authorization using the CanCanCan gem. A new Rails application 
-called "CRM" is created and a model and controller for customers is generated. The CustomersController includes standard CRUD actions and the views use forms for creating and updating customer information.
+The code is a Ruby on Rails application that provides a customer relationship management (CRM) system. The Gemfile lists the dependencies of the application, including the Devise and CanCanCan gems. In the terminal, a new Rails application named "crm" is created and then several models, controllers, and middleware are generated.
 
-The code displays a table of customers with their name, email, and phone number, with links for viewing, editing, and deleting customer information. Additional functionality, such as filters and pagination, can also be added.
+The CustomersController and NotesController manage the creation, updating, and destruction of customer and note records. The load_and_authorize_resource method provides authorization for CRUD operations on the resources through CanCanCan. The AuthorizationMiddleware class validates the authorization header of incoming requests. If the header is blank, the user will receive a 401 Unauthorized response.
 
-It's important to note that this is just a basic example and will require additional customization to meet specific needs. The steps outlined and the code provided are meant to give a general idea of what a CRM program built with Ruby on Rails might look like.
+The Ability class defines the authorization rules for the application using CanCanCan. It allows administrators to manage all resources, while other users can only access resources to read. The User model is generated with Devise and determines if a user is an admin by checking if the admin? method returns true. The Customer and Note models have validations to ensure the presence of certain attributes. The form view displays a form for creating and editing customer records.
