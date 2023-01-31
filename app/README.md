@@ -13,7 +13,7 @@ The following steps outline the process of setting up a CRM database using Ruby 
 6. Test the database to ensure correct functionality.
 _________________________________________________________________________________________________________________________________________________________________
 This code is for a CRM program using Ruby on Rails and includes authentication using the Devise gem and authorization using the CanCanCan gem. A new Rails application 
-called "crm" is created and a model and controller for customers is generated. The CustomersController includes standard CRUD actions and the views use forms for creating and updating customer information.
+called "CRM" is created and a model and controller for customers is generated. The CustomersController includes standard CRUD actions and the views use forms for creating and updating customer information.
 
 The code displays a table of customers with their name, email, and phone number, with links for viewing, editing, and deleting customer information. Additional functionality, such as filters and pagination, can also be added.
 
